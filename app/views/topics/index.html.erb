@@ -1,4 +1,4 @@
-<h1>Listing topics</h1>
+<h2>Library</h2>
 
 <table>
   <tr>
@@ -13,11 +13,11 @@
     <td><%= link_to topic.title, topic %></td>
     <td><%= pluralize(topic.votes.length, "vote") %></td>
     <td><%= button_to '+1', votes_path(topic_id:topic.id), method: :post %></td>
-    <td><%= link_to 'Buhlete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Fahrenheit 451 that ish', topic, method: :delete, data: { confirm: 'Will it burn?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Topic', new_topic_path %>
+<%= link_to 'Add Your Favorite Book', new_topic_path %>
