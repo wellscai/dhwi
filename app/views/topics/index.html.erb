@@ -1,13 +1,15 @@
 <h2>Library</h2>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<table cell padding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Hot or Not?</th>
+      <th>Bump It Up</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
 <% @topics.each do |topic| %>
   <tr>
     <td><%= link_to topic.title, topic %></td>
@@ -16,6 +18,7 @@
     <td><%= link_to 'Fahrenheit 451 that ish', topic, method: :delete, data: { confirm: 'Will it burn?' } %></td>
   </tr>
 <% end %>
+</tbody>
 </table>
 
 <br />
