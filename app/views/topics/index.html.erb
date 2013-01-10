@@ -6,7 +6,7 @@
       <th>Title</th>
       <th>Hot or Not?</th>
       <th>Bump It Up</th>
-      <th></th>
+      <th>Burninate</th>
     </tr>
   </thead>
   <tbody>
@@ -14,8 +14,8 @@
   <tr>
     <td><%= link_to topic.title, topic %></td>
     <td><%= pluralize(topic.votes.length, "vote") %></td>
-    <td><%= button_to '+1', votes_path(topic_id:topic.id), method: :post %></td>
-    <td><%= link_to 'Fahrenheit 451 that ish', topic, method: :delete, data: { confirm: 'Will it burn?' } %></td>
+    <td><%= button_to 'git it', votes_path(topic_id:topic.id), method: :post %></td>
+    <td><%= button_to 'Fahrenheit 451 that ish', topic, method: :delete, data: { confirm: 'Will it burn?' } %></td>
   </tr>
 <% end %>
 </tbody>

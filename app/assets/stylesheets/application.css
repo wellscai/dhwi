@@ -13,7 +13,8 @@
  */
 
 html {
-	background-color: #d9cab0;
+	background-image: url(trees.jpg);
+	background-size: fixed;
 }
 
 body {
@@ -21,13 +22,13 @@ body {
 	color: #20211b;
 	width: 70%;
 	margin: 0 auto;
-	background-color: #fffff0;
+	background-color: #fffffa;
 	padding: 20px 40px;
 	border: 1px solid #20211b;
 }
 
 header {
-	color: #cccccc;
+	color: #d9cab0;
 	background-color: #20211b;
 	padding: 5px 15px;
 	border: 1px solid #bf3310;
@@ -49,12 +50,17 @@ nav li {
 
 table {
 	width: 100%;
+	border: 2px solid #592918;
 }
 
 thead th {
 	border-bottom: 2px solid #592918;
 	text-align: left;
-	padding: 5px 0;
+}
+
+th,
+td {
+	padding: 2px 2px;
 }
 
 tbody tr {
@@ -65,11 +71,27 @@ tbody tr:nth-child(even) {
 	background-color: #dddddd;
 }
 
-header a:link {color: #3E7E8C;}
-header a:visited {color: #bf3310;}
-header a:hover {color: #bf3310;}
-header a:focus {color:#3E7E8C;}
-header a:active {color:#3E7E8C;}
+a:link {color: #3E7E8C;}
+a:visited {color: #bf3310;}
+a:hover {color: #bf3310;}
+a:focus {color:#3E7E8C;}
+a:active {color:#3E7E8C;}
+
+table a:link {
+	text-decoration: none;
+	color: #3E7E8C;}
+table a:visited {
+	text-decoration: none;
+	color: #bf3310;}
+table a:hover {
+	text-decoration: italic;
+	color: #ffffff;}
+table a:focus {
+	text-decoration: none;
+	color:#3E7E8C;}
+table a:active {
+	text-decoration: none;
+	color:#3E7E8C;}
 
 /*taupe: #d9cab0
 red: #bf3310
